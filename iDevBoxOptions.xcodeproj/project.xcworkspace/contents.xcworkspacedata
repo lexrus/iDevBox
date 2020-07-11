@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:iDevBox.xcodeproj">
+      location = "self:/Users/lex/git/iDevBox/iDevBoxOptions.xcodeproj">
    </FileRef>
 </Workspace>

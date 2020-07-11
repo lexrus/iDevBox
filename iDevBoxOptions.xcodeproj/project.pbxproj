@@ -12,7 +12,35 @@
 		D7144F2C24BA0D85007FB6C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7144F2B24BA0D85007FB6C1 /* Assets.xcassets */; };
 		D7144F2F24BA0D85007FB6C1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7144F2E24BA0D85007FB6C1 /* Preview Assets.xcassets */; };
 		D7144F3224BA0D85007FB6C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7144F3024BA0D85007FB6C1 /* Main.storyboard */; };
+		D7144F4124BA0E88007FB6C1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7144F4024BA0E88007FB6C1 /* Cocoa.framework */; };
+		D7144F4424BA0E88007FB6C1 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7144F4324BA0E88007FB6C1 /* SourceEditorExtension.swift */; };
+		D7144F4624BA0E88007FB6C1 /* FormatJSONCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7144F4524BA0E88007FB6C1 /* FormatJSONCommand.swift */; };
+		D7144F4B24BA0E88007FB6C1 /* iDevBoxExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D7144F3E24BA0E88007FB6C1 /* iDevBoxExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D7144F4924BA0E88007FB6C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D7144F1C24BA0D83007FB6C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7144F3D24BA0E88007FB6C1;
+			remoteInfo = XcodeExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D7144F4F24BA0E88007FB6C1 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D7144F4B24BA0E88007FB6C1 /* iDevBoxExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D7144F2424BA0D83007FB6C1 /* iDevBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDevBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -23,6 +51,12 @@
 		D7144F3124BA0D85007FB6C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D7144F3324BA0D85007FB6C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7144F3424BA0D85007FB6C1 /* iDevBox.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iDevBox.entitlements; sourceTree = "<group>"; };
+		D7144F3E24BA0E88007FB6C1 /* iDevBoxExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = iDevBoxExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7144F4024BA0E88007FB6C1 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		D7144F4324BA0E88007FB6C1 /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
+		D7144F4524BA0E88007FB6C1 /* FormatJSONCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatJSONCommand.swift; sourceTree = "<group>"; };
+		D7144F4724BA0E88007FB6C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7144F4824BA0E88007FB6C1 /* XcodeExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XcodeExtension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +67,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D7144F3B24BA0E88007FB6C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7144F4124BA0E88007FB6C1 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -40,6 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				D7144F2624BA0D83007FB6C1 /* iDevBox */,
+				D7144F4224BA0E88007FB6C1 /* XcodeExtension */,
+				D7144F3F24BA0E88007FB6C1 /* Frameworks */,
 				D7144F2524BA0D83007FB6C1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				D7144F2424BA0D83007FB6C1 /* iDevBox.app */,
+				D7144F3E24BA0E88007FB6C1 /* iDevBoxExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -74,6 +119,25 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		D7144F3F24BA0E88007FB6C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D7144F4024BA0E88007FB6C1 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D7144F4224BA0E88007FB6C1 /* XcodeExtension */ = {
+			isa = PBXGroup;
+			children = (
+				D7144F4324BA0E88007FB6C1 /* SourceEditorExtension.swift */,
+				D7144F4524BA0E88007FB6C1 /* FormatJSONCommand.swift */,
+				D7144F4724BA0E88007FB6C1 /* Info.plist */,
+				D7144F4824BA0E88007FB6C1 /* XcodeExtension.entitlements */,
+			);
+			path = XcodeExtension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -84,15 +148,34 @@
 				D7144F2024BA0D83007FB6C1 /* Sources */,
 				D7144F2124BA0D83007FB6C1 /* Frameworks */,
 				D7144F2224BA0D83007FB6C1 /* Resources */,
+				D7144F4F24BA0E88007FB6C1 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D7144F4A24BA0E88007FB6C1 /* PBXTargetDependency */,
 			);
 			name = iDevBox;
 			productName = iDevBox;
 			productReference = D7144F2424BA0D83007FB6C1 /* iDevBox.app */;
 			productType = "com.apple.product-type.application";
+		};
+		D7144F3D24BA0E88007FB6C1 /* iDevBoxExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7144F4C24BA0E88007FB6C1 /* Build configuration list for PBXNativeTarget "iDevBoxExtension" */;
+			buildPhases = (
+				D7144F3A24BA0E88007FB6C1 /* Sources */,
+				D7144F3B24BA0E88007FB6C1 /* Frameworks */,
+				D7144F3C24BA0E88007FB6C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iDevBoxExtension;
+			productName = XcodeExtension;
+			productReference = D7144F3E24BA0E88007FB6C1 /* iDevBoxExtension.appex */;
+			productType = "com.apple.product-type.xcode-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -107,9 +190,12 @@
 					D7144F2324BA0D83007FB6C1 = {
 						CreatedOnToolsVersion = 11.5;
 					};
+					D7144F3D24BA0E88007FB6C1 = {
+						CreatedOnToolsVersion = 11.5;
+					};
 				};
 			};
-			buildConfigurationList = D7144F1F24BA0D83007FB6C1 /* Build configuration list for PBXProject "iDevBox" */;
+			buildConfigurationList = D7144F1F24BA0D83007FB6C1 /* Build configuration list for PBXProject "iDevBoxOptions" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -123,6 +209,7 @@
 			projectRoot = "";
 			targets = (
 				D7144F2324BA0D83007FB6C1 /* iDevBox */,
+				D7144F3D24BA0E88007FB6C1 /* iDevBoxExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -138,6 +225,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D7144F3C24BA0E88007FB6C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -150,7 +244,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D7144F3A24BA0E88007FB6C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7144F4424BA0E88007FB6C1 /* SourceEditorExtension.swift in Sources */,
+				D7144F4624BA0E88007FB6C1 /* FormatJSONCommand.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D7144F4A24BA0E88007FB6C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D7144F3D24BA0E88007FB6C1 /* iDevBoxExtension */;
+			targetProxy = D7144F4924BA0E88007FB6C1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D7144F3024BA0D85007FB6C1 /* Main.storyboard */ = {
@@ -280,6 +391,7 @@
 		D7144F3824BA0D85007FB6C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = iDevBox/iDevBox.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -303,6 +415,7 @@
 		D7144F3924BA0D85007FB6C1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = iDevBox/iDevBox.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -323,10 +436,52 @@
 			};
 			name = Release;
 		};
+		D7144F4D24BA0E88007FB6C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = XcodeExtension/XcodeExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 5SKD83S59G;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = XcodeExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sh.lex.iDevBox.XcodeExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D7144F4E24BA0E88007FB6C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = XcodeExtension/XcodeExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 5SKD83S59G;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = XcodeExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sh.lex.iDevBox.XcodeExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D7144F1F24BA0D83007FB6C1 /* Build configuration list for PBXProject "iDevBox" */ = {
+		D7144F1F24BA0D83007FB6C1 /* Build configuration list for PBXProject "iDevBoxOptions" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D7144F3524BA0D85007FB6C1 /* Debug */,
@@ -340,6 +495,15 @@
 			buildConfigurations = (
 				D7144F3824BA0D85007FB6C1 /* Debug */,
 				D7144F3924BA0D85007FB6C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7144F4C24BA0E88007FB6C1 /* Build configuration list for PBXNativeTarget "iDevBoxExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7144F4D24BA0E88007FB6C1 /* Debug */,
+				D7144F4E24BA0E88007FB6C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

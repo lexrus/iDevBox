@@ -10,8 +10,13 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
+        VStack {
+            Text("Nothing to show yet.")
+                .font(.title)
+            Text("Just use the Xcode Extension please.")
+                .font(.subheadline)
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 }
 
