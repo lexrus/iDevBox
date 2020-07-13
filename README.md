@@ -16,6 +16,7 @@ Yet another learning-by-doing XcodeKit project
 - [ ] Transform strings between Simplified Chinese and Traditional Chinese
 - [ ] Resort delegates and datasources and group each into prague marks
 - [ ] Wrap current UIViewController or UIView into a SwiftUI View
+- [ ] Uncrustify, ClangFormat, SwiftFormat
 - [ ] ideas?
 
 ## LICENSE
