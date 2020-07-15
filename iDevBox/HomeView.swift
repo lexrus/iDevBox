@@ -16,8 +16,8 @@ struct HomeView: View {
 
             TutorialView()
         }
-        .frame(minWidth: 400, maxWidth: .infinity, minHeight: 400, maxHeight: .infinity)
-//        .navigationViewStyle(DoubleColumnNavigationViewStyle())
+        .frame(minWidth: 500, maxWidth: .infinity, minHeight: 400, maxHeight: .infinity)
+        .navigationViewStyle(DoubleColumnNavigationViewStyle())
     }
 }
 
