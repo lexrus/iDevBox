@@ -9,6 +9,7 @@
 import Foundation
 import XcodeKit
 import JavaScriptCore
+import iDevBoxKit
 
 enum FormatJSONError : Error {
     case bufferError
@@ -25,9 +26,10 @@ enum FormatEngine {
 
 class FormatJSONCommand: NSObject, XCSourceEditorCommand {
 
-    // TODO: Provide as an option
-    private var formatEngine: FormatEngine = .javaScriptCore
-    
+    private var formatEngine: FormatEngine {
+        Settings.useJavaScriptCore ? .javaScriptCore : .jsonSerializer
+    }
+
     func perform(with invocation: XCSourceEditorCommandInvocation, completionHandler: @escaping (Error?) -> Void ) -> Void {
         let lines = invocation.buffer.lines
 

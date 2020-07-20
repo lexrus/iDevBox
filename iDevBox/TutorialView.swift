@@ -18,7 +18,7 @@ struct TutorialView: View {
         }
         .padding([.top, .bottom], 7)
         .padding([.leading, .trailing], 15)
-        .background(Color.green.opacity(0.2))
+        .background(Color.blue)
         .clipShape(RoundedRectangle(cornerRadius: 20))
     }
 
