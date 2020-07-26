@@ -22,6 +22,7 @@
 		D769DEE724C2AF32006438BA /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = D769DEE624C2AF32006438BA /* Defaults.swift */; };
 		D78C45AE24C5E469009521D8 /* SwiftyUserDefaults in Frameworks */ = {isa = PBXBuildFile; productRef = D78C45AD24C5E469009521D8 /* SwiftyUserDefaults */; };
 		D78C45AF24C5E5E1009521D8 /* iDevBoxKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D769DED924C2AF0E006438BA /* iDevBoxKit.framework */; };
+		D7A4C0D124CD2C390036813A /* JSONFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A4C0D024CD2C390036813A /* JSONFormatter.swift */; };
 		D7F928A924BCA8DE00E4736F /* SideBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F928A824BCA8DE00E4736F /* SideBar.swift */; };
 		D7F928AD24BCA9F000E4736F /* FormatJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F928AC24BCA9F000E4736F /* FormatJSON.swift */; };
 		D7F928AF24BCAF7B00E4736F /* TutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F928AE24BCAF7B00E4736F /* TutorialView.swift */; };
@@ -88,6 +89,7 @@
 		D769DEDB24C2AF0E006438BA /* iDevBoxFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iDevBoxFramework.h; sourceTree = "<group>"; };
 		D769DEDC24C2AF0E006438BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D769DEE624C2AF32006438BA /* Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
+		D7A4C0D024CD2C390036813A /* JSONFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONFormatter.swift; sourceTree = "<group>"; };
 		D7F928A424BCA0C600E4736F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D7F928A824BCA8DE00E4736F /* SideBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBar.swift; sourceTree = "<group>"; };
 		D7F928AC24BCA9F000E4736F /* FormatJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatJSON.swift; sourceTree = "<group>"; };
@@ -195,6 +197,7 @@
 				D769DEDB24C2AF0E006438BA /* iDevBoxFramework.h */,
 				D769DEDC24C2AF0E006438BA /* Info.plist */,
 				D769DEE624C2AF32006438BA /* Defaults.swift */,
+				D7A4C0D024CD2C390036813A /* JSONFormatter.swift */,
 			);
 			path = iDevBoxFramework;
 			sourceTree = "<group>";
@@ -388,6 +391,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7A4C0D124CD2C390036813A /* JSONFormatter.swift in Sources */,
 				D769DEE724C2AF32006438BA /* Defaults.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
